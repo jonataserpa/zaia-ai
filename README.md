@@ -30,8 +30,6 @@ $ npm install
 ## Running the app
 
 ```bash
-# exec json-server
-$ npm run mock
 
 # dev
 $ npm run dev
