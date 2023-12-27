@@ -48,4 +48,4 @@ $ sudo docker-compose up
 
 ## Example production on Vercel
 
-- Link: [https://next14-defense.vercel.app/](https://next14-defense.vercel.app/)
+- Link: [https://zaia-ai-jonataserpa.vercel.app/](https://zaia-ai-jonataserpa.vercel.app/)
