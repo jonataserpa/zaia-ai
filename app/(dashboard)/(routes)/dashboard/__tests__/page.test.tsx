@@ -1,22 +1,20 @@
 import { render, screen } from "@testing-library/react";
-import { IDefenseProps } from "@/app/(services)/(routes)/services/interfaces/iDefense.interface";
 import HomePage from "../page";
 import "@testing-library/jest-dom";
+import { IChatProps } from "@/app/(chat)/(routes)/chat/interfaces/iChat.interface";
 
-const mockTodos: IDefenseProps[] = [
+const mockTodos: IChatProps[] = [
   {
     id: 1,
-    name: "SERPRO",
-    status: "up",
-    href: "/",
+    label: "Chat",
+    href: "/chat",
     color: "text-violet-500",
     bgColor: "bg-violet-500/10",
   },
   {
     id: 2,
-    name: "Tribunal de Justiça",
-    status: "warning",
-    href: "/",
+    label: "Geração de Vídeo",
+    href: "/video",
     color: "text-violet-500",
     bgColor: "bg-violet-500/10",
   },
@@ -31,26 +29,26 @@ jest.mock("next/navigation", () => ({
   },
 }));
 
-describe("HomePage - List services", () => {
-  it('should render "No services" when the array is empty', () => {
+describe("HomePage - List chat", () => {
+  it('should render "No conversation" when the array is empty', () => {
     // ARRANGE
     render(<HomePage rows={[]}/>);
 
     //ACT
-    const message = screen.getByText("Carregando serviços...");
+    const message = screen.getByText("Carregando dashboard...");
 
     // ASSERT
     expect(message).toBeInTheDocument();
   });
 
-  it("should render a list services with the correct number of items", async () => {
+  it("should render a list chat with the correct number of items", async () => {
     // ARRANGE
     render(<HomePage rows={mockTodos} />);
 
     // ACT
-    const firstItem = screen.getAllByTestId("SERPRO")[0];
+    const firstItem = screen.getAllByTestId("Chat")[0];
 
     // ASSERT
-    expect(firstItem).toHaveTextContent("SERPRO");
+    expect(firstItem).toHaveTextContent("Chat");
   });
 });

@@ -1,9 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { ArrowRight } from "lucide-react";
-import { Card } from "@/components/ui/card";
-import { cn } from "@/app/lib/utils";
+import { ArrowRight, MessageSquare, ScreenShare, VideoIcon } from "lucide-react";
 import { IChatProps } from "@/app/(chat)/(routes)/chat/interfaces/iChat.interface";
 
 type IHomeProps = {
@@ -13,12 +11,22 @@ type IHomeProps = {
 const HomePage = ({ rows }: any | IHomeProps) => {
   const router = useRouter();
 
+  function validateIcon(label: string) {
+    if (label === "Chat"){
+      return (
+        <MessageSquare />
+      );
+    }
+
+    return <VideoIcon />
+  }
+
   return (
     <div>
       <div className="mb-8 space-y-4">
         <h2 className="text-2xl md:text-4xl font-bold text-center">Chat AI</h2>
         <p className="text-muted-foreground font-light text-sm md:text-lg text-center">
-          Chat inteligente com AI - os poderes da AI
+          Chat inteligente com AI - real time
         </p>
       </div>
       <div className="px-4 md:px-20 lg:px-32 space-y-4">
@@ -30,19 +38,24 @@ const HomePage = ({ rows }: any | IHomeProps) => {
 
         {rows &&
           rows.map((tool: any) => (
-            <Card
+            <div
               key={tool.id}
-              onClick={() => router.push(tool.href)}
-              className="p-4 border-black/5 flex items-center justify-between hover:shadow-md transition cursor-pointer"
+              onClick={() => router.push(tool.href || "/chat")}
+              className="p-8 ring-1 rounded-lg flex items-center justify-between hover:shadow-md transition cursor-pointer"
+              data-testid={tool.label}
+              id="card"
             >
+            
               <div className="flex items-center gap-x-4">
-                <div className={cn("p-2 w-fit rounded-md", tool.bgColor)}>
-                  <tool.icon className={cn("w-8 h-8", tool.color)} />
+                <div className={tool.bgColor}>
+                  <div className={`p-2 w-fit rounded-md ${tool.color}`}>
+                    {validateIcon(tool.label)}
+                  </div>
                 </div>
                 <div className="font-semibold">{tool.label}</div>
               </div>
               <ArrowRight className="w-5 h-5" />
-            </Card>
+            </div>
           ))}
       </div>
     </div>

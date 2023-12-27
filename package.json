@@ -8,9 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
-    "test:watch": "jest --watchAll",
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "test:watch": "jest --watchAll"
   },
   "dependencies": {
     "@clerk/nextjs": "^4.21.15",
