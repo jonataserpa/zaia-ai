@@ -17,8 +17,6 @@ Frontend projeto: Chat AI
 - Validation: useForm e zod
 - Gerenciamento de estado: zustand
 - Test-unitario: Jest 
-- Test e2e: Cypress
-- Mock: Json-server
 - Docker e docker-compose
 
 ## Installation

@@ -21,6 +21,7 @@ import { BotAvatar } from "@/components/bot-avatar";
 import { Heading } from "@/components/heading";
 import { Loader } from "@/components/loader";
 import { Empty } from "@/components/ui/empty";
+import { ChatService } from "./services/chat-service";
 
 const ChatPage = () => {
   const router = useRouter();
@@ -41,8 +42,8 @@ const ChatPage = () => {
       const userMessage: ChatCompletionRequestMessage = { role: "user", content: values.prompt };
       const newMessages = [...messages, userMessage];
       
-      const response = await axios.post('/api/chat', { messages: newMessages });
-      setMessages((current) => [...current, userMessage, response.data]);
+      const data = await ChatService.create({ message: values.prompt });
+      setMessages((current) => [...current, userMessage, data]);
       
       form.reset();
     } catch (error: any) {

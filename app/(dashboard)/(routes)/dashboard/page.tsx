@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { ArrowRight, MessageSquare, ScreenShare, VideoIcon } from "lucide-react";
+import { ArrowRight, MessageSquare, VideoIcon } from "lucide-react";
 import { IChatProps } from "@/app/(chat)/(routes)/chat/interfaces/iChat.interface";
 
 type IHomeProps = {
