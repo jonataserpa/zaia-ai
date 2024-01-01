@@ -42,7 +42,7 @@ const ChatPage = () => {
       const userMessage: ChatCompletionRequestMessage = { role: "user", content: values.prompt };
       const newMessages = [...messages, userMessage];
       
-      const data = await ChatService.create({ message: values.prompt });
+      const data = await ChatService.sendMessage({ message: values.prompt });
       setMessages((current) => [...current, userMessage, data]);
       
       form.reset();

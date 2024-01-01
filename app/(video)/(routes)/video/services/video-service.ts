@@ -33,7 +33,7 @@ export const handleApiErrors = (error: AxiosError, message: string) => {
 };
 
 /**
- * Search message IA
+ * Search video IA
  * @param sendMessage
  * @returns
  */
@@ -41,7 +41,7 @@ const sendMessage = async (
   message: TMessage
 ): Promise<any> => {
   try {
-    const { data } = await ApiService.post("/chat", message);
+    const { data } = await ApiService.post("/video", message);
     if (data) {
       return data.message;
     }
