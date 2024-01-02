@@ -17,6 +17,7 @@ import { Empty } from "@/components/ui/empty";
 
 import { formSchema } from "./constants";
 import { useProModal } from "@/components/hooks/use-pro-modal";
+import { VideoService } from "./services/video-service";
 
 const VideoPage = () => {
   const router = useRouter();
@@ -36,9 +37,9 @@ const VideoPage = () => {
     try {
       setVideo(undefined);
 
-      const response = await axios.post('/api/video', values);
+      const response = await VideoService.sendVideo({ ...values });
 
-      setVideo(response.data[0]);
+      setVideo(response);
       form.reset();
     } catch (error: any) {
       if (error?.response?.status === 403) {

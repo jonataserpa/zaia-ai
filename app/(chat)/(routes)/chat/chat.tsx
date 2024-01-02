@@ -40,7 +40,6 @@ const ChatPage = () => {
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
       const userMessage: ChatCompletionRequestMessage = { role: "user", content: values.prompt };
-      const newMessages = [...messages, userMessage];
       
       const data = await ChatService.sendMessage({ message: values.prompt });
       setMessages((current) => [...current, userMessage, data]);
@@ -120,10 +119,10 @@ const ChatPage = () => {
                 key={message.content} 
                 className={cn(
                   "p-8 w-full flex items-start gap-x-8 rounded-lg",
-                  message.role === "user" ? "bg-white border border-black/10" : "bg-muted",
+                  message.role && message.role === "user" ? "bg-white border border-black/10" : "bg-muted",
                 )}
               >
-                {message.role === "user" ? <UserAvatar /> : <BotAvatar />}
+                {message.role && message.role === "user" ? <UserAvatar /> : <BotAvatar />}
                 <p className="text-sm">
                   {message.content}
                 </p>

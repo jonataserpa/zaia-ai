@@ -1,9 +1,14 @@
+import { toast } from "react-toastify";
 import { AxiosError } from "axios";
+import { IHistoryProps } from "../interfaces/iHistory.interface";
 import { ApiService } from "@/components/axios/axios-config";
 
-type TVideo = {
-  prompt: string;
+export type TChatWithTotalCount = {
+  data: IHistoryProps[];
+  totalCount: number;
 };
+
+export type directionOfSort = "ASC" | "DESC" | undefined;
 
 /**
  * Handle api errors
@@ -13,47 +18,44 @@ export const handleApiErrors = (error: AxiosError, message: string) => {
   if (error && error.response && error.response.data) {
     switch (error.response.data.statusCode) {
       case 400:
-        alert(
+        toast.error(
           "Erro ao processar a requisição, verifique os dados enviados e tente novamente!"
         );
         break;
       case 404:
-        alert("Serviço não encontrado");
+        toast.error("Serviço não encontrado");
         break;
       case 500:
-        alert(
+        toast.error(
           "Erro, o servidor não conseguiu processar a requisição, por favor tente novamente mais tarde ou contate o suporte!"
         );
         break;
       default:
-        alert(message);
+        toast.error(message);
         break;
     }
   }
 };
 
-/**
- * Search video IA
- * @param sendMessage
- * @returns
- */
-const sendVideo = async (
-  values: TVideo
-): Promise<any> => {
+const getAll = async (): Promise<TChatWithTotalCount | Error> => {
   try {
-    const { data } = await ApiService.post("/video", values);
+    const url = "/chat";
+    const { data } = await ApiService.get(url);
 
     if (data) {
-      return data.video;
+      return {
+        data: data.data,
+        totalCount: data.headers,
+      };
     }
 
-    return ""
+    return new Error("Erro ao listar os registros.");
   } catch (error) {
-    handleApiErrors(error as AxiosError, "Erro ao enviar mensagem.");
+    handleApiErrors(error as AxiosError, "Erro ao listar os registros.");
     throw error;
   }
 };
 
-export const VideoService = {
-  sendVideo,
+export const HistoryService = {
+  getAll,
 };

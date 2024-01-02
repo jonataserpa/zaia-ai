@@ -43,7 +43,7 @@ const sendMessage = async (
   try {
     const { data } = await ApiService.post("/chat", message);
     if (data) {
-      return data.message;
+      return data.message.message;
     }
 
     return ""

@@ -1,4 +1,4 @@
-import { FileAudio, LayoutDashboard, LucideIcon, MessageSquare } from "lucide-react";
+import { FileAudio, History, LayoutDashboard, LucideIcon, MessageSquare } from "lucide-react";
 import { Montserrat } from "next/font/google";
 
 
@@ -53,6 +53,12 @@ export const routes = [
     label: "Vídeo",
     icon: FileAudio,
     href: "/video",
+    color: "text-violet-500",
+  },
+  {
+    label: "Histórico",
+    icon: History,
+    href: "/history",
     color: "text-violet-500",
   },
 ];
