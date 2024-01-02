@@ -2,6 +2,18 @@
 
 ![Dashboard](https://cdn.discordapp.com/attachments/1083115321935798314/1191823481407537312/image.png?ex=65a6d71c&is=6594621c&hm=5ae8d96a9454e7c3d241b1ebbb3153be947cd1831276432949f98bdb3aba6170&)
 
+## Chat
+
+![Chat](https://cdn.discordapp.com/attachments/1083115321935798314/1191825074131579000/image.png?ex=65a6d898&is=65946398&hm=0b8bdcbda3ea200e479a0f78679b267e65dce1f3b4eed5bc09620d3b847d7920&)
+
+## Vídeo
+
+![Video](https://cdn.discordapp.com/attachments/1083115321935798314/1191822205496070317/image.png?ex=65a6d5ec&is=659460ec&hm=44bb59ff48e0db95773e8bafd8eaeb52575857c7cbd57b0579bffb1978b9db4a&)
+
+## Histórico da chat e video
+
+![History](https://cdn.discordapp.com/attachments/1083115321935798314/1191825211893497936/image.png?ex=65a6d8b9&is=659463b9&hm=68fcc81f9e8507cc0ae75660b32b93fd532b4a53edc11339e7c8cd6e61c95297&)
+
 ## Mobile
 
 ![Mobile](https://cdn.discordapp.com/attachments/1083115321935798314/1189614452933414932/image.png?ex=659ecdcb&is=658c58cb&hm=3993f285de8f870230e2087968c2fa4f93628832b946fcb9e1296575ac9e58fd&)
