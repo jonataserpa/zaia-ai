@@ -31,6 +31,33 @@ Frontend projeto: Chat AI
 - Test-unitario: Jest 
 - Docker e docker-compose
 
+Backend:
+- Project API create with Node.js:
+- Framework: Nest.js,
+- ORM: Prisma
+- Bd: Mysql
+- Test unit - (Jest)
+- Desgin patterns
+    - Mapper
+    - Factory
+    - DTO
+- Documentation - Swagger API
+- Software architecture:
+
+    - Ports & Adapters (Hexagonal Architecture)
+        - Application
+            - Use cases
+    - Infra
+        - Http - (Controllers)
+        - Database - (Orm - Prisma)
+        - Dtos - (Validators)
+        - Messaging - (Kafka)
+        - AI
+    - Helpers
+    - Solid
+
+    Repositório: https://github.com/jonataserpa/backend-thewayschool
+
 ## Installation
 
 ```bash
