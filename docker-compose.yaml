@@ -4,7 +4,7 @@ services:
   app:
     build: .
     entrypoint: ./.docker/entrypoint.sh
-    container_name: defense-blue
+    container_name: zaia-ai
     ports:
       - 3000:3000
     volumes:
