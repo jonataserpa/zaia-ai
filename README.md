@@ -1,6 +1,6 @@
 ## Dashboard
 
-![Dashboard](https://cdn.discordapp.com/attachments/1083115321935798314/1189614238562529491/image.png?ex=659ecd98&is=658c5898&hm=4fa10d4010f30364b9922e1892098f5bb94f70c433826eb0bb457e594c244038&)
+![Dashboard](https://cdn.discordapp.com/attachments/1083115321935798314/1191823481407537312/image.png?ex=65a6d71c&is=6594621c&hm=5ae8d96a9454e7c3d241b1ebbb3153be947cd1831276432949f98bdb3aba6170&)
 
 ## Mobile
 

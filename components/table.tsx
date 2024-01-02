@@ -18,7 +18,7 @@ const TablePage = ({ rows, totalCount }: IRows) => {
   }
 
   function validateType(type: number | undefined) {
-    if (type === 2) {
+    if (type === 1) {
       return (<MessageSquare />)
      } 
      
