@@ -1,10 +1,10 @@
-## Dashboard
-
-![Dashboard](https://cdn.discordapp.com/attachments/1083115321935798314/1191823481407537312/image.png?ex=65a6d71c&is=6594621c&hm=5ae8d96a9454e7c3d241b1ebbb3153be947cd1831276432949f98bdb3aba6170&)
-
 ## Login
 
 ![Login](https://cdn.discordapp.com/attachments/1083115321935798314/1191833456020303972/image.png?ex=65a6e067&is=65946b67&hm=d200a3e400cf90a81882564a8786422e008288647da2076c2465b4ceb576a340&)
+
+## Dashboard
+
+![Dashboard](https://cdn.discordapp.com/attachments/1083115321935798314/1191823481407537312/image.png?ex=65a6d71c&is=6594621c&hm=5ae8d96a9454e7c3d241b1ebbb3153be947cd1831276432949f98bdb3aba6170&)
 
 ## Chat
 
