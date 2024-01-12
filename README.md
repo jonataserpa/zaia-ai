@@ -35,10 +35,12 @@ Frontend projeto: Chat AI
 - Test-unitario: Jest 
 - Docker e docker-compose
 - LLM :
-    - openai:
-        - modelo: gpt-3.5-turbo
+    - openai: 
+        - chat:
+            - modelo: gpt-3.5-turbo
     - replicate
-        - modelo: anotherjesse/zeroscope-v2-xl
+        - video:
+            - modelo: anotherjesse/zeroscope-v2-xl
 
 Backend:
 - Project API create with Node.js:
