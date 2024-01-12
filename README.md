@@ -34,6 +34,9 @@ Frontend projeto: Chat AI
 - Gerenciamento de estado: zustand
 - Test-unitario: Jest 
 - Docker e docker-compose
+- LLM :
+    - openai
+    - replicate
 
 Backend:
 - Project API create with Node.js:
