@@ -58,7 +58,6 @@ Backend:
         - Http - (Controllers)
         - Database - (Orm - Prisma)
         - Dtos - (Validators)
-        - Messaging - (Kafka)
         - AI
     - Helpers
     - Solid
