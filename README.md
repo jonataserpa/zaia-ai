@@ -1,26 +1,26 @@
 ## Login
 
-![Login](https://cdn.discordapp.com/attachments/1083115321935798314/1191833456020303972/image.png?ex=65a6e067&is=65946b67&hm=d200a3e400cf90a81882564a8786422e008288647da2076c2465b4ceb576a340&)
+![Login](https://cdn.discordapp.com/attachments/1083115321935798314/1191833456020303972/image.png?ex=65f9eee7&is=65e779e7&hm=1a2ec564f3e0796be45f98b9362e810cea490e03f6d97573293dced650075a92&)
 
 ## Dashboard
 
-![Dashboard](https://cdn.discordapp.com/attachments/1083115321935798314/1191823481407537312/image.png?ex=65a6d71c&is=6594621c&hm=5ae8d96a9454e7c3d241b1ebbb3153be947cd1831276432949f98bdb3aba6170&)
+![Dashboard](https://cdn.discordapp.com/attachments/1083115321935798314/1191823481407537312/image.png?ex=65f9e59c&is=65e7709c&hm=7d26831cc541932dc57e390414ec392e39c8497c535ee9fb57ef515d440fa9bb&)
 
 ## Chat
 
-![Chat](https://cdn.discordapp.com/attachments/1083115321935798314/1191825074131579000/image.png?ex=65a6d898&is=65946398&hm=0b8bdcbda3ea200e479a0f78679b267e65dce1f3b4eed5bc09620d3b847d7920&)
+![Chat](https://cdn.discordapp.com/attachments/1083115321935798314/1191825074131579000/image.png?ex=65f9e718&is=65e77218&hm=236e30b4ae76963e89fa941a04fc11f9ec6621b811319c1004e3c42d4b0b0071&)
 
 ## Vídeo
 
-![Video](https://cdn.discordapp.com/attachments/1083115321935798314/1191822205496070317/image.png?ex=65a6d5ec&is=659460ec&hm=44bb59ff48e0db95773e8bafd8eaeb52575857c7cbd57b0579bffb1978b9db4a&)
+![Video](https://cdn.discordapp.com/attachments/1083115321935798314/1191822205496070317/image.png?ex=65f9e46c&is=65e76f6c&hm=f1b8567ed3eb3b1207e9e5ec0f4f50ad418b7298892cbde68502f138a028ac57&)
 
 ## Histórico da chat e video
 
-![History](https://cdn.discordapp.com/attachments/1083115321935798314/1191825211893497936/image.png?ex=65a6d8b9&is=659463b9&hm=68fcc81f9e8507cc0ae75660b32b93fd532b4a53edc11339e7c8cd6e61c95297&)
+![History](https://cdn.discordapp.com/attachments/1083115321935798314/1191825211893497936/image.png?ex=65f9e739&is=65e77239&hm=85b390c3faa727d39277b555c08b6b68ef6c542f8edb42ad53a1784e33649fb5&)
 
 ## Mobile
 
-![Mobile](https://cdn.discordapp.com/attachments/1083115321935798314/1189614452933414932/image.png?ex=659ecdcb&is=658c58cb&hm=3993f285de8f870230e2087968c2fa4f93628832b946fcb9e1296575ac9e58fd&)
+![Mobile](https://cdn.discordapp.com/attachments/1083115321935798314/1189614452933414932/image.png?ex=65fb16cb&is=65e8a1cb&hm=d17b33d3f607a3166e2aa279f2464c6655336b61f77955d91834b95d7f95143d&)
 
 ## Description
 
